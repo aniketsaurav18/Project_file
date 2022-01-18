@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.hero{
+    padding: 10px 50px;
+    display: inline-flex;
+    margin:20px;
+    width: 100vw;
+}
+h2{
+    padding: 10px 50px;
+    margin: 20px;
+}
+#btn{
+    padding: 10px 50px;
+    margin: 20px;
+    cursor: pointer;
+}
+.hide{
+    visibility: hidden;
+}
