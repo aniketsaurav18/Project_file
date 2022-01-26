@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+    background-repeat: no-repeat;
+}
+.card{
+    background: #000000d0;
+    color: white;
+    border-radius: 0.5rem;
+    width: 100vw;
+    max-width: 420px;
+    padding: 2rem;
+    margin: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-bar{
+    border: none;
+    outline: none;
+    padding: 0.6em;
+    border-radius: 18px;
+    background: #f8f8f8;
+    font-family: inherit;
+    font-size: 120%;
+
+}
+.weather{
+    padding: 15px;
+    margin: 10px;
+}
