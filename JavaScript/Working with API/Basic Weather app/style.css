@@ -13,7 +13,7 @@ body{
     background-repeat: no-repeat;
 }
 .card{
-    background: #000000d0;
+    background: #030303d0;
     color: white;
     border-radius: 0.5rem;
     width: 100vw;
@@ -54,4 +54,8 @@ button {
 .weather{
     padding: 15px;
     margin: 10px;
+}
+.flex{
+    display: flex;
+    align-items: center;
 }
