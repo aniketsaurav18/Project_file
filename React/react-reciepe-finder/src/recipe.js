@@ -13,7 +13,7 @@ const Recipe = ({ title, image, calories, cuisine }) => {
       <p>{calories}</p>
       <p>{cuisine}</p>
       <Link to="/">
-        <button>Read more</button>
+        <li>Read more</li>
       </Link>
 
       {/* <Link to="/invoices">Invoices</Link> */}
