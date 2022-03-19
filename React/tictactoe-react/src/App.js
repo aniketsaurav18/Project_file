@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Startmodal from "./startmodal";
-import GameBoard from "./gameboard";
+import Startmodal from "./component/startmodal";
+import GameBoard from "./component/gameboard";
 import "./App.css";
 
 function App() {

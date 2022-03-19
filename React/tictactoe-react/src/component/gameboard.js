@@ -66,7 +66,7 @@ const GameBoard = ({ player, setPlayer, playerSelected }) => {
     return (
       <div className="gameOver">
         <p>The winner is {winner}</p>
-        <button type="button" onClick={playerSelected(false)}>
+        <button type="button" onClick={() => playerSelected(false)}>
           Start Over
         </button>
       </div>
