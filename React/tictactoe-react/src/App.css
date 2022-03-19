@@ -1,0 +1,66 @@
+:root {
+  --cell-size: 100px;
+  --mark-size: calc(var(--cell-size) * 0.9);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(37, 36, 36);
+}
+.root {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.game {
+  height: auto;
+  width: auto;
+  /* max-width: 60vh; */
+
+  background-color: rgb(226, 213, 213);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 10px;
+  row-gap: 10px;
+}
+.gridbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(37, 36, 36);
+  color: white;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  font-size: 8rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.gameOver {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60vh;
+  height: 30vh;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(230, 225, 225);
+  z-index: 15;
+}
+.gameOver p {
+  color: rgb(36, 35, 35);
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 500;
+}
