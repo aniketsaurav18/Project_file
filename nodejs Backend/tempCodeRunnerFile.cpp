@@ -1,42 +1,57 @@
 #include <iostream>
-#include <bits/stdc++.h>
 using namespace std;
+class shape{
+    public:
+    int sides;
+    void number_of_sides(int x){
+       cout<<"number of sides in the shape is: "<<x<<endl;
+   };
+};
+
+class triangle:public shape{
+    public:
+    
+    void getSides(){
+        
+        cout<<"enter the number of sides: ";
+        cin>>sides;
+
+    }
+    
+};
+class trapezium:public shape{
+    public:
+    
+    void getSides(){
+        
+        cout<<"enter the number of sides: ";
+        cin>>sides;
+
+    }
+    
+};
+class hexagon:public shape{
+    public:
+    
+    void getSides(){
+        
+        cout<<"enter the number of sides: ";
+        cin>>sides;
+
+    }
+    
+};
 
 int main(){
-    int row,col;
-    cin>>row>>col;
-    cout<<endl;
-    int a[row][col];
-    vector<vector<int>>v;
-    vector<int>temp;
-    for(int i=0;i<row;i++){
-        for(int j=0;j<col;j++){
-            cin>>a[i][j];
-            if(a[i][j]==0){
-                temp.push_back(i);
-                temp.push_back(j);
-                v.push_back(temp);
-                temp.clear();
-            }
-        }
-    }
-    for(int i=0;i<v.size();i++){
-        for(int j=0;j<row;j++){
-            a[v[i][0]][j]=0;
-        }
-        for(int j=0;j<row;j++){
-            a[j][v[i][1]]=0;
-        }
-    }
-    for(int i=0;i<row;i++){
-        for(int j=0;j<col;j++){
-            cout<<a[i][j]<<" ";
-        }
-        cout<<endl;
-    }
-
-
-
+    triangle t;
+    t.getSides();
+    t.number_of_sides(t.sides);
+   trapezium tr;
+    tr.getSides();
+    tr.number_of_sides(tr.sides);
+    hexagon h;
+    h.getSides();
+    h.number_of_sides(h.sides);
 
 
 
