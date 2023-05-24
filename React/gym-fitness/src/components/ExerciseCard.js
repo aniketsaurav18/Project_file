@@ -22,7 +22,7 @@ const ExerciseCard = ({ exercise }) => {
         <Button
           sx={{
             ml: "21px",
-            color: "#fcc757",
+            color: "#fff",
             background: "#ffa9a9",
             fontSize: "14px",
             borderRadius: "20px",
@@ -39,7 +39,7 @@ const ExerciseCard = ({ exercise }) => {
         mt="11px"
         pb="10px"
         textTransform="capitalize"
-        fontSize="22px"
+        fontSize="20px"
       >
         {exercise.name}
       </Typography>

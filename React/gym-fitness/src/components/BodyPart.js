@@ -13,14 +13,14 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => {
         borderTop: bodyPart === item ? "4px solid #ff2625" : "",
         borderBottomLeftRadius: "20px",
         background: "#fff",
-        width: "270px",
-        height: "280px",
+        width: "150px",
+        height: "140px",
         cursor: "pointer",
-        gap: "47px",
+        gap: "25px",
       }}
       onClick={() => {
         setBodyPart(item);
-        window.scrollTo({ top: 1800, left: 100, behavior: "smooth" });
+        window.scrollTo({ top: 1650, left: 100, behavior: "smooth" });
       }}
     >
       <img src={Icon} alt="dumbell" style={{ width: "40px", height: "40px" }} />
